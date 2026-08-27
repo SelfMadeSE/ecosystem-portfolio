@@ -29,7 +29,7 @@ export const projects: Project[] = [
     problems: ['Keeping the same project intact through changes', 'Separating an agent claim from verified runtime proof', 'Making lifecycle and failure states legible without hiding the system'],
     tech: ['TypeScript', 'React', 'Unity', 'Node.js', 'local Codex adapter'],
     verified: 'Current source identifies this as the Unity-first clean core. The supplied surface is labeled a local proof environment; it is not presented as a general autonomous game-generation claim.',
-    media: { src: '/media/game-studio/studio-surface.jpg', alt: 'Game Studio local creator surface showing a playable-draft workflow', source: 'Local Game Studio Unity project capture, 2026-08-26', note: 'Real local product evidence; visible language remains a local proof environment.' },
+    media: { src: '/media/product-evidence/game-studio-live.jpg', alt: 'Game Studio creator surface showing an evidence-bound playable-draft workflow', source: 'Local Game Studio Unity project capture, 2026-08-26', note: 'Real local product evidence; visible language remains a local proof environment.' },
     github: 'https://github.com/SelfMadeSE/Game-Studio',
   },
   {
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     problems: ['Turning multi-signal site analysis into a clear next action', 'Keeping public product language specific without overclaiming outcomes', 'Designing a complete desktop and mobile audit journey'],
     tech: ['Next.js', 'React', 'TypeScript', 'Vercel'],
     verified: 'The current public site presents Outbound Autonomy as a URL-based website-audit product. No customers, revenue, testimonial, or internal-pipeline metric is asserted here.',
-    media: { src: '/media/outbound-autonomy/production-hero.jpg', alt: 'Outbound Autonomy public website audit product hero', source: 'Outbound Autonomy production capture, 2026-08-26', note: 'Real production product evidence; live pricing and performance claims are not repeated as portfolio claims.' },
+    media: { src: '/media/product-evidence/outbound-live.jpg', alt: 'Outbound Autonomy public website intelligence product interface', source: 'Outbound Autonomy production capture, 2026-08-26', note: 'Real production product evidence; live pricing and performance claims are not repeated as portfolio claims.' },
     href: 'https://outboundautonomy.com/',
   },
   {
