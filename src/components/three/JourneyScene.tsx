@@ -82,10 +82,6 @@ function StoryPhotos({ activeIndex }: { activeIndex: number }) {
       <PhotoPlane src="/media/game-studio/studio-surface.jpg" position={[-2.15, 0.25, -2.4]} scale={[2.8, 1.84]} rotation={[0, 0.12, 0]} opacity={0.68} />
       <PhotoPlane src="/media/musestudio/muse-editor.png" position={[1.95, -0.05, -2.05]} scale={[3.05, 2]} rotation={[0, -0.1, 0]} opacity={0.65} />
     </Chapter>
-    <Chapter z={-80} activeIndex={activeIndex} index={4}>
-      <PhotoPlane src="/media/travel/spain-plate-01.jpg" position={[0, 0, -2.6]} scale={[6.2, 4.2]} opacity={0.74} />
-      <PhotoPlane src="/media/travel/spain-plate-02.jpg" position={[2.55, -1, -0.45]} scale={[1.6, 2.22]} rotation={[0, -0.12, 0]} opacity={0.8} />
-    </Chapter>
     <Chapter z={-100} activeIndex={activeIndex} index={5}>
       <PhotoPlane src="/media/founder/current-portrait-3498.jpg" position={[0, 0, -2.5]} scale={[3.05, 4.06]} opacity={0.62} />
     </Chapter>
