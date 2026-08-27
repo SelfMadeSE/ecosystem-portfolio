@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowUpRight, Github, Mail } from 'lucide-react'
 import { ProjectCard } from '@/components/ProjectCard'
-import { PortraitPlaceholder } from '@/components/PortraitPlaceholder'
+import { PortraitHero } from '@/components/PortraitHero'
 import { SiteHeader } from '@/components/SiteHeader'
 import { SpatialGallery } from '@/components/SpatialGallery'
 import { projects } from '@/data/projects'
@@ -13,7 +13,7 @@ export default function Home() {
     <main>
       <section className="hero" id="top">
         <div className="hero__copy"><p className="eyebrow">Ecosystem Global Solutions Inc.</p><h1>Rylee<br /><em>Benson.</em></h1><p className="hero__role">Founder / Full-Stack Engineer</p><p className="hero__proposition">I build AI systems, developer tools and creative software from prototype to shipped product.</p><div className="hero__actions"><a className="button button--primary" href="#work">Selected work <ArrowDown size={16} /></a><a className="button" href="#about">About / Résumé</a><a className="icon-action" href="https://github.com/SelfMadeSE" aria-label="Rylee Benson on GitHub" target="_blank" rel="noreferrer"><Github size={19} /></a><a className="icon-action" href="mailto:owner@outboundautonomy.com" aria-label="Email Rylee Benson"><Mail size={19} /></a></div></div>
-        <PortraitPlaceholder />
+        <PortraitHero />
         <div className="hero__index" aria-hidden="true"><span>01</span><span>Independent engineering practice<br />Grande Prairie, Alberta</span></div>
       </section>
 

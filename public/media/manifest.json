@@ -2,7 +2,8 @@
   "schema": "ecosystem-portfolio/media-manifest/v1",
   "purpose": "Public portfolio media with source and publication boundaries.",
   "assets": [
-    {"path":"portrait/README.md","status":"placeholder","source":"No approved final founder portrait supplied for this rebuild.","notes":"A labelled non-person placeholder is intentionally used on the homepage."},
+    {"path":"portrait/rylee-benson-hero-desktop.webp","status":"approved-founder-portrait","source":"/Users/ryleebenson/Desktop/Images for port/IMG_1982.jpeg","notes":"User-supplied original selected for the homepage hero. Centered 3400 × 4500 crop; 2040 × 2700 WebP derivative at quality 86. The original remains outside the repository."},
+    {"path":"portrait/rylee-benson-hero-mobile.webp","status":"approved-founder-portrait","source":"/Users/ryleebenson/Desktop/Images for port/IMG_1982.jpeg","notes":"Responsive derivative of the same approved source: centered 3400 × 4500 crop; 1080 × 1429 WebP at quality 84."},
     {"path":"game-studio/studio-surface.jpg","status":"real-evidence","source":"/Users/ryleebenson/Documents/Codex/2026-08-26/referenced-chatgpt-conversation-this-is-an/outputs/portfolio-media/game-studio-unity/local-studio-desktop.jpg","captured":"2026-08-26","notes":"Local Unity-first Game Studio surface. Keep local-proof status visible."},
     {"path":"musestudio/muse-editor.png","status":"real-evidence","source":"/Users/ryleebenson/Desktop/Spector/e2e_reports/1774901058_5_MuseAIView_Prompt.png","notes":"Native Muse Studio UI test capture. Screenshot may show test fixture content; no model-success claim is attached."},
     {"path":"outbound-autonomy/production-hero.jpg","status":"real-evidence","source":"https://outboundautonomy.com/","captured":"2026-08-26","notes":"Production capture. Portfolio intentionally omits customer, revenue, testimonial and product-metric claims."},

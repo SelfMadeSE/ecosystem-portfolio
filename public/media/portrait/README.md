@@ -1,3 +1,5 @@
-# Portrait status
+# Founder portrait derivatives
 
-No approved final founder portrait was supplied for the canonical rebuild. The homepage therefore uses a labelled non-person placeholder. Replace it only with an approved, rights-cleared portrait and update `public/media/manifest.json` at the same time.
+The homepage uses responsive WebP derivatives made from the user-supplied source at `/Users/ryleebenson/Desktop/Images for port/IMG_1982.jpeg`.
+
+The source original stays outside the repository. Published derivatives and crop/encoding details are recorded in `../manifest.json`.
