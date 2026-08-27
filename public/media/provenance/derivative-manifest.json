@@ -1,0 +1,485 @@
+{
+  "manifest_version": "1.0",
+  "generated_at": "2026-08-27T18:26:19Z",
+  "governing_rule": "Real source first. Derivatives may repair, extend, or separate the frame, but never replace the subject or falsify the underlying moment.",
+  "source_archive": "/Users/ryleebenson/Desktop/Images for port",
+  "audit_manifest": "/Users/ryleebenson/Documents/Codex/2026-08-27/referenced-chatgpt-conversation-this-is-an/outputs/media-archive-review/asset-manifest.json",
+  "entries": [
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_2444.jpeg",
+      "inventory_id": 395,
+      "source_sha256": "00c3da6bf7dc70e74269f567be8cc7db1a1d62e8a6a7dfb17b631275421b6919",
+      "source_dimensions": [
+        4032,
+        3024
+      ],
+      "source_capture_date": "2023:10:29 18:17:50",
+      "output_path": "media/field/field-establishing-01.jpg",
+      "output_sha256": "e04065030d926404ae93e53f893619a7c93258244bce65cab2cda46ee9c20dda",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "FIELD opening scale plate",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1920,
+        1440
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_2445.jpeg",
+      "inventory_id": 396,
+      "source_sha256": "8c95a7c5d936dbf5a00ab595fcc0f9fc734b3e09869cc49c96c57ce5701986f3",
+      "source_dimensions": [
+        4032,
+        3024
+      ],
+      "source_capture_date": "2023:10:29 18:17:51",
+      "output_path": "media/field/field-establishing-02.jpg",
+      "output_sha256": "20edd96ce701fee758885a88e3f0eccd9edb875a40b4e5bf602a4b9417e6393f",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "FIELD secondary exterior plate",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1920,
+        1440
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_2446.jpeg",
+      "inventory_id": 397,
+      "source_sha256": "9fa6c11675cf2e97ff81a0eb6f4f475009147272c316a4f0d62b32d858307640",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "source_capture_date": "2023:10:29 18:17:53",
+      "output_path": "media/field/field-establishing-03.jpg",
+      "output_sha256": "99a85a854e5f5647a2003f9d00500e3fed367c5191c59f0b03f6acd5e9c7e4bb",
+      "treatment": "spatial",
+      "revision": 1,
+      "role": "FIELD portrait detail for subtle foreground/midground/background drift",
+      "changes": "Faithful sRGB export only. Spatial use is CSS depth motion on the intact flat image; no invented hidden geometry.",
+      "derivative_dimensions": [
+        1280,
+        1707
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_2301.jpeg",
+      "inventory_id": 369,
+      "source_sha256": "9ccb1329769532487fb278c11b0391f8a557abf85110992bd877a913c56361d6",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "source_capture_date": "2023:10:01 22:11:19",
+      "output_path": "media/field/field-night-01.jpg",
+      "output_sha256": "1e6a6b25b7aef81ded98872d64404f93f84620922f5acddbca8b39e77280a1e7",
+      "treatment": "transition",
+      "revision": 1,
+      "role": "FIELD exit atmosphere",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1280,
+        1707
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_2302.jpeg",
+      "inventory_id": 370,
+      "source_sha256": "e36820ace89d1968bbcf50407effe27a71b89f0e64bfbc7abfd080830771d106",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "source_capture_date": "2023:10:01 22:11:21",
+      "output_path": "media/field/field-night-02.jpg",
+      "output_sha256": "308cddcee313a9f006b1f7c616ab81b03fb634dea75815068485e8d9fb4b89b3",
+      "treatment": "transition",
+      "revision": 1,
+      "role": "FIELD exit atmosphere alternate",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1280,
+        1707
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_2303.jpeg",
+      "inventory_id": 371,
+      "source_sha256": "4d0a92af0170dd37cbe4bc3e6de5d91e927cd7887f85c72a739e94a7600f8259",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "source_capture_date": "2023:10:01 22:11:22",
+      "output_path": "media/field/field-night-03.jpg",
+      "output_sha256": "179aa78ede78ff350722b8068e48dc844bf799ecd20180e6e12005ba54216a7c",
+      "treatment": "transition",
+      "revision": 1,
+      "role": "FIELD exit atmosphere alternate",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1280,
+        1707
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_2304.jpeg",
+      "inventory_id": 372,
+      "source_sha256": "b265d3277f25dde5d60302723c6000aa986d5f181f13f6e210483128fd86b34b",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "source_capture_date": "2023:10:01 22:11:23",
+      "output_path": "media/field/field-night-04.jpg",
+      "output_sha256": "dc95ef5781288ad048e395e549d1c9b7ce34664b323f4ccc9b809559c1f28fba",
+      "treatment": "transition",
+      "revision": 1,
+      "role": "FIELD exit atmosphere alternate",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1280,
+        1707
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "Italy/IMG_2031.jpeg",
+      "inventory_id": 551,
+      "source_sha256": "b53ba84c396e066adf2cf345c134b745655e2ac292f3bfbd2854ea14df99af56",
+      "source_dimensions": [
+        4284,
+        5712
+      ],
+      "source_capture_date": "2024:11:23 11:10:59",
+      "output_path": "media/travel/rome-plate-01.jpg",
+      "output_sha256": "8b681910fb124333251e04d65b76fb9ef6956116ca820aeba3c4849944cf31e5",
+      "treatment": "spatial",
+      "revision": 1,
+      "role": "ROME arrival environment plate",
+      "changes": "Faithful sRGB export only. CSS applies a restrained scale drift; no subject/background separation was fabricated.",
+      "derivative_dimensions": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "Italy/IMG_2035.jpeg",
+      "inventory_id": 552,
+      "source_sha256": "4fdbf0998ff30ffa347061be7daa95f709d425b81e9af0357e658a3b058288fb",
+      "source_dimensions": [
+        4284,
+        5712
+      ],
+      "source_capture_date": "2024:11:23 11:12:23",
+      "output_path": "media/travel/rome-plate-02.jpg",
+      "output_sha256": "eaa64eb20cf40c88ac49c14671e243f4e4502679dc7d0dce2bb674c2cbe62133",
+      "treatment": "transition",
+      "revision": 1,
+      "role": "ROME street transition plate",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "Italy/IMG_2149.jpeg",
+      "inventory_id": 556,
+      "source_sha256": "79eb093b7d5ec9917f7c0c03f9c84686511a00644f995a001b0ccd4ed8d4bb7b",
+      "source_dimensions": [
+        4284,
+        5712
+      ],
+      "source_capture_date": "2024:11:24 17:08:09",
+      "output_path": "media/travel/rome-plate-03.jpg",
+      "output_sha256": "cbf1ac428100169e2647c72bf534c5ed53dec685aab02576aec5fbfb7f8e9f94",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "ROME architectural plate",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "Italy/IMG_2996.jpeg",
+      "inventory_id": 567,
+      "source_sha256": "8661b9735a42bdc928e11f35f735b1e7053d36e85ff1ea28dc97a3fec1ff56a1",
+      "source_dimensions": [
+        4284,
+        5712
+      ],
+      "source_capture_date": "2025:04:02 09:55:35",
+      "output_path": "media/travel/rome-personal-bench.jpg",
+      "output_sha256": "aa15679d04b5513476fdda350e7eac5d7580e64fb6f3d5db579db7be979c943e",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "ROME personal image integrated within environment chapter",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1280,
+        1707
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "Spain/IMG_1508.jpeg",
+      "inventory_id": 581,
+      "source_sha256": "992eda34fb52dee2b4f2b03c3269d9e53bf8befe245a6a323399845dc6d181ca",
+      "source_dimensions": [
+        4032,
+        3024
+      ],
+      "source_capture_date": "2019:03:27 10:55:49",
+      "output_path": "media/travel/spain-plate-01.jpg",
+      "output_sha256": "0023328ef5b892dc0a929bd07082356d0d8983c9e84c006d4ea81b2a834be73b",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "Travel reserve; explicitly Spain, not labelled Rome",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1440,
+        1080
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "Spain/IMG_1546.jpeg",
+      "inventory_id": 582,
+      "source_sha256": "543a048d4805e8ef7917e7c6cb9c3dbaab1650ccfd5a19c08c43c2c8a02d326b",
+      "source_dimensions": [
+        4032,
+        3024
+      ],
+      "source_capture_date": "2019:03:27 12:32:01",
+      "output_path": "media/travel/spain-plate-02.jpg",
+      "output_sha256": "37e3fa305ece51486e2f08d7a8c200d778bdc0c507db39f890132c51cb4ae84a",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "Travel reserve; explicitly Spain, not labelled Rome",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1440,
+        1080
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_3498.jpeg",
+      "inventory_id": 496,
+      "source_sha256": "0c3b9e6ce30e9c65b8b448a97556d7a8c7bbcbdb2570b7665190f864afb1d951",
+      "source_dimensions": [
+        2316,
+        3088
+      ],
+      "source_capture_date": "2024:04:11 18:56:05",
+      "output_path": "media/founder/current-portrait-3498.jpg",
+      "output_sha256": "1f7862a4dd2e761c1c27138942f9d45489c7645b24689df2121317b7a54bf1b0",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "CURRENT / NOW candid portrait",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        960,
+        1280
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_2444.jpeg",
+      "inventory_id": 395,
+      "source_sha256": "00c3da6bf7dc70e74269f567be8cc7db1a1d62e8a6a7dfb17b631275421b6919",
+      "source_dimensions": [
+        4032,
+        3024
+      ],
+      "source_capture_date": "2023:10:29 18:17:50",
+      "output_path": "media/field/field-hero-safe.jpg",
+      "output_sha256": "ca9fb174ac292f648229d2ccf14e44e6081b4f99f02e13713f727d90d4c5c1f7",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "FIELD hero environment with company-marked truck door excluded",
+      "changes": "Editorial crop only: removes the left truck-door area carrying a visible company mark; no pixels were generated, removed, or otherwise altered.",
+      "source_pixel_crop": [
+        2500,
+        400,
+        4032,
+        2000
+      ],
+      "derivative_dimensions": [
+        1440,
+        1504
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_2445.jpeg",
+      "inventory_id": 396,
+      "source_sha256": "8c95a7c5d936dbf5a00ab595fcc0f9fc734b3e09869cc49c96c57ce5701986f3",
+      "source_dimensions": [
+        4032,
+        3024
+      ],
+      "source_capture_date": "2023:10:29 18:17:51",
+      "output_path": "media/field/field-exterior-safe.jpg",
+      "output_sha256": "aa519e241181e79496b91ba8a197eafd2b871215db67aaee3abf91b9ff325ab2",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "FIELD secondary exterior environment with company-marked truck door excluded",
+      "changes": "Editorial crop only: removes the left truck-door area carrying a visible company mark; no pixels were generated, removed, or otherwise altered.",
+      "source_pixel_crop": [
+        2500,
+        400,
+        4032,
+        2000
+      ],
+      "derivative_dimensions": [
+        1440,
+        1504
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "IMG_2446.jpeg",
+      "inventory_id": 397,
+      "source_sha256": "9fa6c11675cf2e97ff81a0eb6f4f475009147272c316a4f0d62b32d858307640",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "source_capture_date": "2023:10:29 18:17:53",
+      "output_path": "media/field/field-detail-safe.jpg",
+      "output_sha256": "59592f824d5aa48f143e2849bfa742fa3f6a4e84a3c533b4e3123501c1dae1b3",
+      "treatment": "spatial",
+      "revision": 1,
+      "role": "FIELD vertical equipment detail with company-marked truck door excluded",
+      "changes": "Editorial crop only: removes the left truck-door area carrying a visible company mark. CSS may apply low-amplitude drift to the intact flat image; no pixels were generated, removed, or otherwise altered.",
+      "source_pixel_crop": [
+        1400,
+        0,
+        3024,
+        4032
+      ],
+      "derivative_dimensions": [
+        1080,
+        2681
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "video-1247_singular_display.mov",
+      "inventory_id": 598,
+      "source_sha256": "7b3118332d57fd54e63de3d58225e3756ebe07763112ef1b63a24288346e2b51",
+      "source_dimensions": [
+        1360,
+        1824
+      ],
+      "source_capture_date": "2026-08-27T17:29:36.000000Z",
+      "output_path": "media/field/video/meta-field-pov-1045-1130-desktop-audio.mp4",
+      "output_sha256": "9c52eaf80ba5a8e8f5c927c4af1f5a5657580e13729cb5f38dd0975791ab1543",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "FIELD primary optional-audio source",
+      "changes": "Bounded privacy-reviewed first-person rig-floor action. Bottom source band is cropped to remove visible equipment branding; re-encoded for web delivery; audio retained for editorial review only.",
+      "selected_source_interval_seconds": [
+        104.5,
+        113.0
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "video-1247_singular_display.mov",
+      "inventory_id": 598,
+      "source_sha256": "7b3118332d57fd54e63de3d58225e3756ebe07763112ef1b63a24288346e2b51",
+      "source_dimensions": [
+        1360,
+        1824
+      ],
+      "source_capture_date": "2026-08-27T17:29:36.000000Z",
+      "output_path": "media/field/video/meta-field-pov-1045-1130-autoplay.mp4",
+      "output_sha256": "c9fecdd3fdffb7a2e0d01739b180152542c62218080049aaa6a1e6dfa8015aa1",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "FIELD primary muted autoplay web derivative",
+      "changes": "Same bounded interval as the audio source; bottom source band is cropped to remove visible equipment branding; audio removed for autoplay.",
+      "selected_source_interval_seconds": [
+        104.5,
+        113.0
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "video-1247_singular_display.mov",
+      "inventory_id": 598,
+      "source_sha256": "7b3118332d57fd54e63de3d58225e3756ebe07763112ef1b63a24288346e2b51",
+      "source_dimensions": [
+        1360,
+        1824
+      ],
+      "source_capture_date": "2026-08-27T17:29:36.000000Z",
+      "output_path": "media/field/video/meta-field-pov-1045-1130-mobile.mp4",
+      "output_sha256": "ac15bdbba8e70e60b103494bb3da83e88cc41b74988dc26772618fa872ab56ca",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "FIELD primary mobile portrait web derivative",
+      "changes": "Same bounded interval as desktop source; bottom source band is cropped to remove visible equipment branding; portrait source retained and downscaled for mobile; audio removed.",
+      "selected_source_interval_seconds": [
+        104.5,
+        113.0
+      ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "video-1247_singular_display.mov",
+      "inventory_id": 598,
+      "source_sha256": "7b3118332d57fd54e63de3d58225e3756ebe07763112ef1b63a24288346e2b51",
+      "source_dimensions": [
+        1360,
+        1824
+      ],
+      "source_capture_date": "2026-08-27T17:29:36.000000Z",
+      "output_path": "media/field/video/meta-field-pov-1045-1130-poster.jpg",
+      "output_sha256": "08699c57b2bc52162574f513a81bf5278ae106a64bb0cee679596aa922136ace",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "FIELD primary poster frame",
+      "changes": "Single frame at 108.0 seconds from the selected source interval; bottom source band cropped to remove visible equipment branding; metadata stripped.",
+      "selected_source_interval_seconds": [
+        108.0,
+        108.0
+      ]
+    }
+  ],
+  "not_created": [
+    {
+      "source_relative_path": "IMG_1982.jpeg",
+      "inventory_id": 335,
+      "reason": "Background-person AI cleanup was rejected because the generated result changed the subject facial/clothing detail. Original remains immutable; no derivative published."
+    },
+    {
+      "source_relative_path": "Italy/IMG_7566.jpeg",
+      "inventory_id": 570,
+      "reason": "Reserved for a future masked background-only cleanup. Large pedestrian/vehicle removal is not approved without a result that preserves the subject exactly."
+    },
+    {
+      "source_relative_path": "IMG_3496.jpeg",
+      "inventory_id": 495,
+      "reason": "Not published in this pass: background may expose workplace material. Needs explicit crop/redaction review."
+    }
+  ]
+}

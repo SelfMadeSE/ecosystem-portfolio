@@ -9,68 +9,102 @@ import { usePerformanceProfile } from './PerformanceManager'
 
 type Vector3 = [number, number, number]
 
-function Plate({ src, position, scale, rotation = [0, 0, 0], opacity = 1 }: { src: string; position: Vector3; scale: [number, number]; rotation?: Vector3; opacity?: number }) {
+type PhotoPlaneProps = {
+  src: string
+  position: Vector3
+  scale: [number, number]
+  rotation?: Vector3
+  opacity?: number
+  drift?: number
+}
+
+function PhotoPlane({ src, position, scale, rotation = [0, 0, 0], opacity = 1, drift = 0.04 }: PhotoPlaneProps) {
   const texture = useTexture(src)
+  const ref = useRef<THREE.Mesh>(null)
   texture.colorSpace = THREE.SRGBColorSpace
-  return <mesh position={position} rotation={rotation}><planeGeometry args={scale} /><meshBasicMaterial map={texture} transparent opacity={opacity} toneMapped={false} /></mesh>
-}
-
-function WorldGroup({ chapter, activeIndex, index, children }: { chapter: number; activeIndex: number; index: number; children: React.ReactNode }) {
-  const ref = useRef<THREE.Group>(null)
-  useFrame((_, delta) => {
+  useFrame(({ pointer, clock }) => {
     if (!ref.current) return
-    const active = activeIndex === index
-    ref.current.position.y = THREE.MathUtils.damp(ref.current.position.y, active ? 0 : index < activeIndex ? 1.5 : -1.5, 3.2, delta)
-    ref.current.scale.setScalar(THREE.MathUtils.damp(ref.current.scale.x, active ? 1 : 0.88, 3.2, delta))
+    ref.current.position.x = position[0] + pointer.x * drift
+    ref.current.position.y = position[1] + pointer.y * drift * 0.6 + Math.sin(clock.elapsedTime * 0.26 + position[2]) * 0.018
   })
-  return <group ref={ref} position={[0, 0, chapter]}>{children}</group>
+  return <mesh ref={ref} position={position} rotation={rotation}>
+    <planeGeometry args={scale} />
+    <meshBasicMaterial map={texture} transparent opacity={opacity} toneMapped={false} />
+  </mesh>
 }
 
-function TimelineCamera({ activeIndex }: { activeIndex: number }) {
+function CameraDrift({ activeIndex }: { activeIndex: number }) {
   const { camera, pointer, scene } = useThree()
-  const target = useMemo(() => new THREE.Vector3(), [])
   const desired = useMemo(() => new THREE.Vector3(), [])
+  const target = useMemo(() => new THREE.Vector3(), [])
   const color = useMemo(() => new THREE.Color(), [])
   useFrame((_, delta) => {
     const chapter = worlds[activeIndex]
     desired.set(...chapter.camera.position)
-    desired.x += pointer.x * 0.18
-    desired.y += pointer.y * 0.12
+    desired.x += pointer.x * 0.13
+    desired.y += pointer.y * 0.09
     target.set(...chapter.camera.target)
-    camera.position.lerp(desired, 1 - Math.exp(-2.6 * delta))
+    camera.position.lerp(desired, 1 - Math.exp(-2.1 * delta))
     camera.lookAt(target)
     color.set(chapter.camera.color)
-    ;(scene.background as THREE.Color).lerp(color, 1 - Math.exp(-1.8 * delta))
+    ;(scene.background as THREE.Color).lerp(color, 1 - Math.exp(-1.5 * delta))
   })
   return null
 }
 
-function FieldWorld({ activeIndex }: { activeIndex: number }) {
-  return <WorldGroup chapter={0} activeIndex={activeIndex} index={0}><ambientLight intensity={0.65} /><directionalLight position={[-3, 5, 4]} intensity={2.2} color="#d6e7f0" /><Plate src="/media/field/rig-day.webp" position={[0, 0, -2.5]} scale={[5.3, 7]} /><Plate src="/media/field/tubulars.webp" position={[2.7, -0.7, 0.3]} scale={[2.5, 4.1]} rotation={[0, -0.32, 0]} opacity={0.96} /><mesh position={[-2.25, -2.65, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[16, 16]} /><meshStandardMaterial color="#263235" roughness={0.95} metalness={0.2} /></mesh><mesh position={[0, 0.4, -7]} rotation={[0, 0, 0]}><cylinderGeometry args={[1.9, 1.9, 9, 40, 1, true]} /><meshStandardMaterial color="#111719" side={THREE.BackSide} metalness={0.7} roughness={0.28} /></mesh></WorldGroup>
+function Chapter({ z, activeIndex, index, children }: { z: number; activeIndex: number; index: number; children: React.ReactNode }) {
+  const group = useRef<THREE.Group>(null)
+  useFrame((_, delta) => {
+    if (!group.current) return
+    const distance = activeIndex - index
+    group.current.position.y = THREE.MathUtils.damp(group.current.position.y, distance === 0 ? 0 : distance > 0 ? 1.4 : -1.4, 3.2, delta)
+    group.current.scale.setScalar(THREE.MathUtils.damp(group.current.scale.x, distance === 0 ? 1 : 0.9, 3.2, delta))
+  })
+  return <group ref={group} position={[0, 0, z]}>{children}</group>
 }
 
-function RomeWorld({ activeIndex }: { activeIndex: number }) {
-  return <WorldGroup chapter={-20} activeIndex={activeIndex} index={1}><ambientLight intensity={0.72} color="#ffb76e" /><pointLight position={[1, 3, -16]} intensity={20} color="#ff8e3b" distance={11} /><Plate src="/media/rome/vault.webp" position={[0, 0, -2.6]} scale={[5.2, 6.95]} /><Plate src="/media/rome/arrival.webp" position={[-3.4, -0.5, 0.7]} scale={[2.5, 1.86]} rotation={[0, 0.5, 0]} opacity={0.88} /><Plate src="/media/rome/rome-portrait.webp" position={[3.35, 0.3, 0.2]} scale={[2.45, 1.83]} rotation={[0, -0.48, 0]} opacity={0.9} /><Plate src="/media/rome/rome-two.webp" position={[0.5, -2.2, 1.4]} scale={[2.9, 2.17]} rotation={[0.1, -0.08, 0]} opacity={0.82} /><mesh position={[0, 0.2, -7]}><torusGeometry args={[2.35, 0.13, 12, 48]} /><meshStandardMaterial color="#24130c" metalness={0.75} roughness={0.24} /></mesh></WorldGroup>
-}
-
-function StudioWorld({ activeIndex }: { activeIndex: number }) {
-  return <WorldGroup chapter={-40} activeIndex={activeIndex} index={2}><ambientLight intensity={0.4} /><pointLight position={[0, 2, 2]} intensity={13} color="#c8df66" distance={9} /><Plate src="/media/portrait/rylee-benson-hero-desktop.webp" position={[-1.7, 0, -2]} scale={[3.6, 4.76]} rotation={[0, 0.16, 0]} opacity={0.82} /><mesh position={[1.9, 0.25, -1.3]}><boxGeometry args={[2.9, 3.7, 0.18]} /><meshStandardMaterial color="#111817" metalness={0.78} roughness={0.2} /></mesh><mesh position={[1.9, 0.25, -1.18]}><planeGeometry args={[2.5, 1.55]} /><meshBasicMaterial color="#c8df66" transparent opacity={0.3} /></mesh><gridHelper args={[15, 15, '#546155', '#242b28']} position={[0, -2.8, 0]} /></WorldGroup>
-}
-
-function ArchiveWorld({ activeIndex }: { activeIndex: number }) {
-  return <WorldGroup chapter={-60} activeIndex={activeIndex} index={3}><ambientLight intensity={0.3} /><pointLight position={[0, 2, 2]} intensity={12} color="#8b7dff" distance={9} />{[-2.5, -0.8, 0.8, 2.5].map((x, index) => <mesh key={x} position={[x, index % 2 === 0 ? 0.4 : -0.6, -1]} rotation={[0, index % 2 ? -0.15 : 0.15, 0]}><boxGeometry args={[1.15, 1.6, 0.22]} /><meshStandardMaterial color={['#24203d', '#35231d', '#10343d', '#24351c'][index]} metalness={0.7} roughness={0.22} /></mesh>)}</WorldGroup>
-}
-
-function FutureWorlds({ activeIndex }: { activeIndex: number }) {
-  return <><WorldGroup chapter={-80} activeIndex={activeIndex} index={4}><ambientLight intensity={0.4} /><mesh position={[0, 0, -1]}><icosahedronGeometry args={[2.2, 2]} /><meshStandardMaterial color="#344d26" wireframe /></mesh></WorldGroup><WorldGroup chapter={-100} activeIndex={activeIndex} index={5}><ambientLight intensity={0.55} /><pointLight position={[0, 2, 2]} intensity={18} color="#c8df66" distance={10} /><mesh position={[0, 0, -1]}><torusKnotGeometry args={[1.6, 0.08, 220, 28]} /><meshStandardMaterial color="#c8df66" metalness={0.7} roughness={0.18} /></mesh></WorldGroup></>
+function StoryPhotos({ activeIndex }: { activeIndex: number }) {
+  return <>
+    <Chapter z={0} activeIndex={activeIndex} index={0}>
+      <PhotoPlane src="/media/field/field-hero-safe.jpg" position={[0, 0, -2.7]} scale={[6.35, 4.35]} drift={0.055} />
+      <PhotoPlane src="/media/field/field-detail-safe.jpg" position={[2.55, -0.8, -0.45]} scale={[1.58, 3.6]} rotation={[0, -0.14, 0]} opacity={0.82} />
+    </Chapter>
+    <Chapter z={-20} activeIndex={activeIndex} index={1}>
+      <PhotoPlane src="/media/travel/rome-plate-01.jpg" position={[0, 0, -2.8]} scale={[6.4, 4.35]} drift={0.045} />
+      <PhotoPlane src="/media/travel/rome-personal-bench.jpg" position={[-2.45, -0.85, -0.4]} scale={[1.65, 2.3]} rotation={[0, 0.15, 0]} opacity={0.86} />
+      <PhotoPlane src="/media/travel/rome-plate-03.jpg" position={[2.55, -0.2, -0.3]} scale={[1.78, 2.55]} rotation={[0, -0.16, 0]} opacity={0.82} />
+    </Chapter>
+    <Chapter z={-40} activeIndex={activeIndex} index={2}>
+      <PhotoPlane src="/media/founder/current-portrait-3498.jpg" position={[-1.35, 0, -2.1]} scale={[3.18, 4.25]} rotation={[0, 0.07, 0]} opacity={0.76} />
+      <PhotoPlane src="/media/game-studio/studio-surface.jpg" position={[1.85, 0.1, -1.6]} scale={[3.1, 2.02]} rotation={[0, -0.1, 0]} opacity={0.6} />
+    </Chapter>
+    <Chapter z={-60} activeIndex={activeIndex} index={3}>
+      <PhotoPlane src="/media/game-studio/studio-surface.jpg" position={[-2.15, 0.25, -2.4]} scale={[2.8, 1.84]} rotation={[0, 0.12, 0]} opacity={0.68} />
+      <PhotoPlane src="/media/musestudio/muse-editor.png" position={[1.95, -0.05, -2.05]} scale={[3.05, 2]} rotation={[0, -0.1, 0]} opacity={0.65} />
+    </Chapter>
+    <Chapter z={-80} activeIndex={activeIndex} index={4}>
+      <PhotoPlane src="/media/travel/spain-plate-01.jpg" position={[0, 0, -2.6]} scale={[6.2, 4.2]} opacity={0.74} />
+      <PhotoPlane src="/media/travel/spain-plate-02.jpg" position={[2.55, -1, -0.45]} scale={[1.6, 2.22]} rotation={[0, -0.12, 0]} opacity={0.8} />
+    </Chapter>
+    <Chapter z={-100} activeIndex={activeIndex} index={5}>
+      <PhotoPlane src="/media/founder/current-portrait-3498.jpg" position={[0, 0, -2.5]} scale={[3.05, 4.06]} opacity={0.62} />
+    </Chapter>
+  </>
 }
 
 function Scene({ activeIndex }: { activeIndex: number }) {
-  return <><color attach="background" args={['#93a6b0']} /><fog attach="fog" args={['#111312', 8, 35]} /><TimelineCamera activeIndex={activeIndex} /><FieldWorld activeIndex={activeIndex} /><RomeWorld activeIndex={activeIndex} /><StudioWorld activeIndex={activeIndex} /><ArchiveWorld activeIndex={activeIndex} /><FutureWorlds activeIndex={activeIndex} /></>
+  return <>
+    <color attach="background" args={['#111513']} />
+    <fog attach="fog" args={['#101311', 5, 28]} />
+    <CameraDrift activeIndex={activeIndex} />
+    <StoryPhotos activeIndex={activeIndex} />
+  </>
 }
 
 export function JourneyScene({ activeIndex }: { activeIndex: number }) {
   const profile = usePerformanceProfile()
-  if (!profile.enabled) return <div className="journey-canvas__fallback">Reduced-motion mode keeps the full written route available.</div>
-  return <Canvas dpr={profile.dpr} camera={{ position: worlds[0].camera.position, fov: 42 }} gl={{ antialias: !profile.enabled, powerPreference: 'high-performance' }}><Suspense fallback={null}><Scene activeIndex={activeIndex} /></Suspense></Canvas>
+  if (!profile.enabled) return <div className="journey-canvas__fallback">Reduced-motion mode keeps the full written route and still media available.</div>
+  return <Canvas dpr={profile.dpr} camera={{ position: worlds[0].camera.position, fov: 42 }} gl={{ antialias: true, powerPreference: 'high-performance' }}>
+    <Suspense fallback={null}><Scene activeIndex={activeIndex} /></Suspense>
+  </Canvas>
 }

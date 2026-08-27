@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "selected_source_count": 28,
+  "governing_rule": "Real source first. Generative tools may repair, extend, or separate the frame, but never replace the subject or falsify the underlying moment.",
+  "groups": {
+    "FIELD": [
+      "IMG_2444.jpeg (395)", "IMG_2445.jpeg (396)", "IMG_2446.jpeg (397)",
+      "IMG_2301.jpeg (369)", "IMG_2302.jpeg (370)", "IMG_2303.jpeg (371)", "IMG_2304.jpeg (372)",
+      "video-1247_singular_display.mov (598)", "video-1017_singular_display.mov (597)", "IMG_0347.MOV (reserve)"
+    ],
+    "ROME_TRAVEL": [
+      "Italy/IMG_2031.jpeg (551)", "Italy/IMG_2035.jpeg (552)", "Italy/IMG_2149.jpeg (556)",
+      "Italy/IMG_2996.jpeg (567)", "Italy/IMG_7566.jpeg (570; queued)", "Spain/IMG_1508.jpeg (581)", "Spain/IMG_1546.jpeg (582)"
+    ],
+    "CURRENT_FOUNDER": ["IMG_3496.jpeg (495; clearance pending)", "IMG_3498.jpeg (496; published)", "IMG_1982.jpeg (335; cleanup rejected)"],
+    "WORK": [
+      "media/game-studio-live.jpg sha256:3f3b1b0022f0a1aad88be318ed351f31e6717bf9efe4d21c113b61d2cd62ed20",
+      "media/game-studio-local.jpg sha256:af6e1713db52d9bd1c71e2b89de8789d01621f54d7408c1e80a0fba9ae4c5166",
+      "media/outbound-live.jpg sha256:ad763bbaff123398dcccb95deabee73482ed8f5df705b4a42df18d7d49163c6b",
+      "media/specdriver/landing-desktop.jpg sha256:ddc21dccee282fcedc9eecab4ab48873fb5f99cfc4976f9000665bb9505eb073",
+      "media/ecostack/landing-desktop.jpg sha256:c73ffb7b8b09a051825c56cff4c002bfa9c7c9340b08001a1eedb8c976f931d1",
+      "media/ecosystemaws/home-hero-crop.jpg sha256:026e760fb0d126750cc79cd1e01acbb98e1566a5a7880298fe2f49146cf2ef62"
+    ],
+    "TRANSITIONS": ["IMG_3135.MOV (470; reserve)", "IMG_3137.MOV (471; reserve)"]
+  },
+  "published_in_this_pass": [
+    "FIELD safe crops and night stills", "bounded 8.5-second Meta POV derivatives", "Rome architectural and personal plates",
+    "one current candid portrait", "existing actual product captures"
+  ],
+  "not_published": [
+    "Any AI-generated person or environment", "IMG_1982.jpeg generated cleanup", "IMG_3496.jpeg before workplace-background review", "video-1017 and night MOV reserves before privacy review"
+  ]
+}

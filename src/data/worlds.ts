@@ -16,23 +16,23 @@ export const worlds: WorldChapter[] = [
   {
     id: 'field', number: '00', nav: 'FIELD', eyebrow: 'Alberta / origin', title: 'Rylee Benson.',
     statement: 'Field work → independent engineering.',
-    detail: 'A real Alberta drilling site is the opening coordinate. The systems work begins with a life lived close to equipment, weather, constraints, and the people operating through all three.',
+    detail: 'A real Alberta field record is the opening coordinate: equipment, weather, constraints, and the people operating through all three. The selected frames are editorial derivatives of the original archive—not a reconstructed industrial scene.',
     camera: { position: [0, 1.1, 7], target: [0, 0.4, 0], color: '#93a6b0' },
     media: [
-      { src: '/media/field/rig-day.webp', alt: 'Drilling rig at an Alberta field site', role: 'Field scale and opening environment' },
-      { src: '/media/field/tubulars.webp', alt: 'Tubular pipe sections in snow at a field site', role: 'Transition tunnel material' },
+      { src: '/media/field/field-hero-safe.jpg', alt: 'Winter industrial field site under an expansive sky', role: 'FIELD opening environment' },
+      { src: '/media/field/field-detail-safe.jpg', alt: 'Vertical editorial detail of field equipment', role: 'FIELD depth plate' },
     ],
   },
   {
     id: 'rome', number: '01', nav: 'ROME', eyebrow: 'Rome / expansion', title: 'A different frame.',
     statement: 'Travel becomes a memory-space, not a mood board.',
-    detail: 'The brick vault, couch, street-light warmth, and founder photographs are the architectural source plates for this chapter. The camera moves through them rather than treating them as an About gallery.',
+    detail: 'Architectural and personal source plates from Italy become a memory-space rather than an About gallery. Spain remains a later travel record and is never relabelled as Rome.',
     camera: { position: [0, 0.35, -12.5], target: [0, 0, -20], color: '#3a160c' },
     media: [
-      { src: '/media/rome/vault.webp', alt: 'Rylee Benson seated beneath a brick vault', role: 'Primary vaulted-room geometry' },
-      { src: '/media/rome/arrival.webp', alt: 'Rylee Benson in a warm Rome interior', role: 'Arrival memory plate' },
-      { src: '/media/rome/rome-two.webp', alt: 'Rylee Benson seated with a companion in Rome', role: 'Social memory plate' },
-      { src: '/media/rome/rome-portrait.webp', alt: 'Rylee Benson in a Rome interior', role: 'Founder close-range plate' },
+      { src: '/media/travel/rome-plate-01.jpg', alt: 'Italian architectural arrival environment', role: 'Italy arrival plate' },
+      { src: '/media/travel/rome-plate-02.jpg', alt: 'Italian street transition', role: 'Italy street transition' },
+      { src: '/media/travel/rome-plate-03.jpg', alt: 'Italian architecture', role: 'Italy architectural plate' },
+      { src: '/media/travel/rome-personal-bench.jpg', alt: 'Personal travel moment in Italy', role: 'Italy personal plate' },
     ],
   },
   {
@@ -40,7 +40,7 @@ export const worlds: WorldChapter[] = [
     statement: 'AI systems, developer tools, and creative software from prototype to shipped product.',
     detail: 'The warm architectural world resolves into a working archive: current company context, technical capability, and real interfaces ready to be inspected.',
     camera: { position: [0, 0.3, -32.5], target: [0, 0, -40], color: '#0e1716' },
-    media: [{ src: '/media/portrait/rylee-benson-hero-desktop.webp', alt: 'Rylee Benson, founder and full-stack engineer', role: 'Present-day founder plate' }],
+    media: [{ src: '/media/founder/current-portrait-3498.jpg', alt: 'Rylee Benson, current candid portrait', role: 'Present-day founder plate' }],
   },
   {
     id: 'work', number: '03', nav: 'WORK', eyebrow: 'Selected work', title: 'Enter the work.',
