@@ -69,21 +69,13 @@ function StoryPhotos({ activeIndex }: { activeIndex: number }) {
       <PhotoPlane src="/media/field/field-hero-safe.jpg" position={[0, 0, -2.7]} scale={[6.35, 4.35]} drift={0.055} />
       <PhotoPlane src="/media/field/field-detail-safe.jpg" position={[2.55, -0.8, -0.45]} scale={[1.58, 3.6]} rotation={[0, -0.14, 0]} opacity={0.82} />
     </Chapter>
-    <Chapter z={-20} activeIndex={activeIndex} index={1}>
-      <PhotoPlane src="/media/travel/rome-plate-01.jpg" position={[0, 0, -2.8]} scale={[6.4, 4.35]} drift={0.045} />
-      <PhotoPlane src="/media/travel/rome-personal-bench.jpg" position={[-2.45, -0.85, -0.4]} scale={[1.65, 2.3]} rotation={[0, 0.15, 0]} opacity={0.86} />
-      <PhotoPlane src="/media/travel/rome-plate-03.jpg" position={[2.55, -0.2, -0.3]} scale={[1.78, 2.55]} rotation={[0, -0.16, 0]} opacity={0.82} />
-    </Chapter>
     <Chapter z={-40} activeIndex={activeIndex} index={2}>
-      <PhotoPlane src="/media/founder/current-portrait-3498.jpg" position={[-1.35, 0, -2.1]} scale={[3.18, 4.25]} rotation={[0, 0.07, 0]} opacity={0.76} />
+      <PhotoPlane src="/media/scenes/field-workshop.jpg" position={[-1.35, 0, -2.1]} scale={[3.18, 4.25]} rotation={[0, 0.07, 0]} opacity={0.76} />
       <PhotoPlane src="/media/game-studio/studio-surface.jpg" position={[1.85, 0.1, -1.6]} scale={[3.1, 2.02]} rotation={[0, -0.1, 0]} opacity={0.6} />
     </Chapter>
     <Chapter z={-60} activeIndex={activeIndex} index={3}>
       <PhotoPlane src="/media/game-studio/studio-surface.jpg" position={[-2.15, 0.25, -2.4]} scale={[2.8, 1.84]} rotation={[0, 0.12, 0]} opacity={0.68} />
       <PhotoPlane src="/media/musestudio/muse-editor.png" position={[1.95, -0.05, -2.05]} scale={[3.05, 2]} rotation={[0, -0.1, 0]} opacity={0.65} />
-    </Chapter>
-    <Chapter z={-100} activeIndex={activeIndex} index={5}>
-      <PhotoPlane src="/media/founder/current-portrait-3498.jpg" position={[0, 0, -2.5]} scale={[3.05, 4.06]} opacity={0.62} />
     </Chapter>
   </>
 }
@@ -99,7 +91,7 @@ function Scene({ activeIndex }: { activeIndex: number }) {
 
 export function JourneyScene({ activeIndex }: { activeIndex: number }) {
   const profile = usePerformanceProfile()
-  if (!profile.enabled) return <div className="journey-canvas__fallback">Reduced-motion mode keeps the full written route and still media available.</div>
+  if (!profile.enabled) return <div className="journey-canvas__fallback">Reduced motion is enabled. The full portfolio remains available without animation.</div>
   return <Canvas dpr={profile.dpr} camera={{ position: worlds[0].camera.position, fov: 42 }} gl={{ antialias: true, powerPreference: 'high-performance' }}>
     <Suspense fallback={null}><Scene activeIndex={activeIndex} /></Suspense>
   </Canvas>

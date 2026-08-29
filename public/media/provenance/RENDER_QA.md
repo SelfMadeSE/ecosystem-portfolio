@@ -14,7 +14,13 @@ The browser reported no console errors or warnings after the final stylesheet re
 
 ## Motion test
 
-The selected FIELD clip played as a bounded, muted, non-looping 8.5-second source in the in-page control. The production web derivative is `media/field/video/meta-field-pov-1045-1130-autoplay.mp4`; the optional audio review source is adjacent. The browser surface used for this pass did not expose a screen-recording API, so no synthetic or misleading “screen recording” was created. The actual web clip is the retained motion artifact.
+The selected FIELD clip played as a bounded, muted, non-looping 8.5-second source in the in-page control. The production web derivative was `media/field/video/meta-field-pov-1045-1130-autoplay.mp4`; the optional audio review source is adjacent. The browser surface used for this pass did not expose a screen-recording API, so no synthetic or misleading “screen recording” was created. The actual web clip is the retained motion artifact.
+
+## Continuation motion pass — 2026-08-27
+
+The active portfolio now uses `media/field/video/meta-field-pov-100-111-slowcut.mp4`, a 13.6-second muted, non-looping derivative of `video-1247_singular_display.mov`. It combines four source windows from 01:40.0–01:51.3 with deliberate speed changes: a slower opening work-surface move, a quicker connective beat, a longer mechanical reveal, and a measured return to the tool. The original file is unchanged; source intervals, speed factors, dimensions, and the output hash are recorded in `derivative-manifest.json`.
+
+The cut is mounted through the existing `FieldRecord` control and respects reduced motion: no in-view autoplay is attempted when `prefers-reduced-motion: reduce` matches. The video is displayed in its native portrait orientation so the field-of-view and hands/equipment remain legible on desktop and mobile.
 
 ## Known pre-publication review points
 

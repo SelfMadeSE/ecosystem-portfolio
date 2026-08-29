@@ -280,6 +280,27 @@
     },
     {
       "source_kind": "media_archive",
+      "source_relative_path": "Germany/IMG_2798.jpeg",
+      "inventory_id": 16,
+      "source_sha256": "bdbc5e386ae2a9445d0bf139406afb310e2f380aace328290685c7d8414fd49d",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "source_capture_date": "2024:12:03 21:20:54",
+      "output_path": "media/travel/germany-plate-01.jpg",
+      "output_sha256": "7e4d0e623ec9c0b23806987669aed6da15ccff930bb90694458b78a1d196c3c7",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "ABOUT visual context / public mural",
+      "changes": "Faithful sRGB export; metadata stripped; no crop, retouch, or AI alteration.",
+      "derivative_dimensions": [
+        1920,
+        2560
+      ]
+    },
+    {
+      "source_kind": "media_archive",
       "source_relative_path": "IMG_3498.jpeg",
       "inventory_id": 496,
       "source_sha256": "0c3b9e6ce30e9c65b8b448a97556d7a8c7bbcbdb2570b7665190f864afb1d951",
@@ -463,6 +484,52 @@
         108.0,
         108.0
       ]
+    },
+    {
+      "source_kind": "media_archive",
+      "source_relative_path": "video-1247_singular_display.mov",
+      "inventory_id": 598,
+      "source_sha256": "7b3118332d57fd54e63de3d58225e3756ebe07763112ef1b63a24288346e2b51",
+      "source_dimensions": [
+        1360,
+        1824
+      ],
+      "source_capture_date": "2026-08-27T17:29:36.000000Z",
+      "output_path": "media/field/video/meta-field-pov-100-111-slowcut.mp4",
+      "output_sha256": "847f1161992f6915ef7e5e2eea632ba547c069302479cd76123d9e2610730d47",
+      "treatment": "editorial",
+      "revision": 1,
+      "role": "FIELD selected slow-cut motion derivative",
+      "changes": "Audio removed; four clean source windows assembled from the original; segments retimed to 0.74x, 1.18x, 0.63x, and 0.95x for a restrained reveal; fade in/out added; no subject or environment replacement.",
+      "selected_source_intervals_seconds": [
+        [
+          100.0,
+          102.8
+        ],
+        [
+          102.8,
+          105.3
+        ],
+        [
+          105.3,
+          108.2
+        ],
+        [
+          108.2,
+          111.3
+        ]
+      ],
+      "speed_factors": [
+        0.74,
+        1.18,
+        0.63,
+        0.95
+      ],
+      "derivative_dimensions": [
+        720,
+        966
+      ],
+      "duration_seconds": 13.566667
     }
   ],
   "not_created": [

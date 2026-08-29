@@ -1,4 +1,4 @@
-export type WorldId = 'field' | 'rome' | 'studio' | 'work' | 'lab' | 'now'
+export type WorldId = 'present' | 'work' | 'capabilities' | 'studio' | 'field' | 'services' | 'now'
 
 export type WorldChapter = {
   id: WorldId
@@ -14,52 +14,54 @@ export type WorldChapter = {
 
 export const worlds: WorldChapter[] = [
   {
-    id: 'field', number: '01', nav: 'FIELD', eyebrow: 'Alberta / origin', title: 'Rylee Benson.',
-    statement: 'A real Alberta field record.',
-    detail: 'A real Alberta field record is the opening coordinate: equipment, weather, constraints, and the people operating through all three. The selected frames are editorial derivatives of the original archive—not a reconstructed industrial scene.',
-    camera: { position: [0, 1.1, 7], target: [0, 0.4, 0], color: '#93a6b0' },
-    media: [
-      { src: '/media/field/field-hero-safe.jpg', alt: 'Winter industrial field site under an expansive sky', role: 'FIELD opening environment' },
-      { src: '/media/field/field-detail-safe.jpg', alt: 'Vertical editorial detail of field equipment', role: 'FIELD depth plate' },
-    ],
-  },
-  {
-    id: 'rome', number: '02', nav: 'ROME', eyebrow: 'Rome / expansion', title: 'A different frame.',
-    statement: 'Italian architecture and personal travel record.',
-    detail: 'Architectural and personal source plates from Italy record a period of travel. Spain remains a later travel record and is never relabelled as Rome.',
-    camera: { position: [0, 0.35, -12.5], target: [0, 0, -20], color: '#3a160c' },
-    media: [
-      { src: '/media/travel/rome-plate-01.jpg', alt: 'Italian architectural arrival environment', role: 'Italy arrival plate' },
-      { src: '/media/travel/rome-plate-02.jpg', alt: 'Italian street transition', role: 'Italy street transition' },
-      { src: '/media/travel/rome-plate-03.jpg', alt: 'Italian architecture', role: 'Italy architectural plate' },
-      { src: '/media/travel/rome-personal-bench.jpg', alt: 'Personal travel moment in Italy', role: 'Italy personal plate' },
-    ],
-  },
-  {
-    id: 'studio', number: '03', nav: 'STUDIO', eyebrow: 'Ecosystem Global Solutions Inc.', title: 'Build the system.',
-    statement: 'AI systems, developer tools, and creative software from prototype to shipped product.',
-    detail: 'The warm architectural world resolves into a working archive: current company context, technical capability, and real interfaces ready to be inspected.',
-    camera: { position: [0, 0.3, -32.5], target: [0, 0, -40], color: '#0e1716' },
-    media: [{ src: '/media/founder/current-portrait-3498.jpg', alt: 'Rylee Benson, current candid portrait', role: 'Present-day founder plate' }],
-  },
-  {
-    id: 'work', number: '04', nav: 'WORK', eyebrow: 'Selected work', title: 'Enter the work.',
-    statement: 'Four product worlds with real operating surfaces.',
-    detail: 'Game Studio, MuseStudio, Outbound Autonomy, and Autonomous Operations remain individually addressable case studies. In the spatial route, they are entrances rather than SaaS cards.',
-    camera: { position: [0, 0.2, -52.5], target: [0, 0, -60], color: '#101111' },
+    id: 'present', number: '01', nav: 'INTRO', eyebrow: 'Independent product engineer', title: 'Design, build, and ship ambitious software.',
+    statement: 'Product direction, visual design, AI-assisted engineering, and delivery across the stack.',
+    detail: 'Real product surfaces stay visible while motion supports the systems behind them.',
+    camera: { position: [0, 0.8, 7], target: [0, 0.2, 0], color: '#111a1a' },
     media: [],
   },
   {
-    id: 'lab', number: '05', nav: 'LAB', eyebrow: 'Experiments', title: 'Make the method visible.',
-    statement: 'Evidence-bound AI work, native tools, and practical automation.',
-    detail: 'This is where smaller prototypes, operating patterns, and the systems behind the public work can live without being inflated into product claims.',
+    id: 'work', number: '02', nav: 'WORK', eyebrow: 'Selected work', title: 'Products with a trail.',
+    statement: 'Projects with a clear product, build, and verification story.',
+    detail: 'Open a project to see what exists, why it matters, and what can be verified today.',
+    camera: { position: [0, 0.2, -12.5], target: [0, 0, -20], color: '#101111' },
+    media: [],
+  },
+  {
+    id: 'capabilities', number: '03', nav: 'CAPABILITIES', eyebrow: 'What I build', title: 'Working interfaces, not promises.',
+    statement: 'Six interactive systems showing the products I design and engineer.',
+    detail: 'Marketplace, CRM, billing, regulated workflows, AI automation, native tools, and operations.',
+    camera: { position: [0, 0.3, -32.5], target: [0, 0, -40], color: '#0e1716' },
+    media: [],
+  },
+  {
+    id: 'studio', number: '04', nav: 'ABOUT / PROCESS', eyebrow: 'About + how I work', title: 'From the first question to the shipped system.',
+    statement: 'Find the problem, shape the system, build the slice, and check the result.',
+    detail: 'The goal is the next useful version, not the most impressive plan.',
+    camera: { position: [0, 0.3, -42.5], target: [0, 0, -50], color: '#0e1716' },
+    media: [],
+  },
+  {
+    id: 'field', number: '05', nav: 'CONTEXT', eyebrow: 'Operating context', title: 'I design for the conditions products actually face.',
+    statement: 'Weather, noise, time pressure, and imperfect information.',
+    detail: 'Real working conditions are part of the product context, not an afterthought.',
+    camera: { position: [0, 0.35, -62.5], target: [0, 0, -70], color: '#252e2c' },
+    media: [
+      { src: '/media/field/field-hero-safe.jpg', alt: 'Winter industrial field site under an expansive sky', role: 'FIELD establishing frame' },
+      { src: '/media/field/field-detail-safe.jpg', alt: 'Editorial detail of field equipment', role: 'FIELD process detail' },
+    ],
+  },
+  {
+    id: 'services', number: '06', nav: 'WAYS TO WORK', eyebrow: 'Ways to work together', title: 'Choose the right level of help.',
+    statement: 'Clear starting points and realistic budget bands.',
+    detail: 'Product direction, interactive sites, AI workflows, and complete platforms.',
     camera: { position: [0, 0.2, -72.5], target: [0, 0, -80], color: '#182012' },
     media: [],
   },
   {
-    id: 'now', number: '06', nav: 'NOW', eyebrow: 'Current position', title: 'Let’s make it real.',
-    statement: 'Rylee Benson — Founder / Full-Stack Engineer.',
-    detail: 'The route ends in the present: a direct way to inspect the source work, see the project record, and start a conversation.',
+    id: 'now', number: '07', nav: 'START A PROJECT', eyebrow: 'Start a project', title: 'Tell me what needs to exist.',
+    statement: 'A structured project note with a direct email fallback.',
+    detail: 'Choose the closest project type, budget, and timing, then open a prepared email.',
     camera: { position: [0, 0.2, -92.5], target: [0, 0, -100], color: '#1f2a13' },
     media: [],
   },

@@ -8,6 +8,6 @@ export function ProjectCard({ project }: { project: Project }) {
     <p className="eyebrow">{project.eyebrow}</p>
     <h3>{project.title}</h3>
     <p>{project.summary}</p>
-    <Link href={`/projects/${project.slug}`} className="text-link">Read case study <span aria-hidden="true">↗</span></Link>
+    <Link href={`/projects/${project.slug}`} className="text-link">Open the build <span aria-hidden="true">↗</span></Link>
   </article>
 }

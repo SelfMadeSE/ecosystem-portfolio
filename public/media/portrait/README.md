@@ -1,5 +1,5 @@
-# Founder portrait derivatives
+# Excluded portrait derivatives
 
-The homepage uses responsive WebP derivatives made from the user-supplied source at `/Users/ryleebenson/Desktop/Images for port/IMG_1982.jpeg`.
+These responsive WebP derivatives are retained for provenance only. They are explicitly excluded from the active portfolio after user review and must not be used as a homepage hero, founder image, or background.
 
-The source original stays outside the repository. Published derivatives and crop/encoding details are recorded in `../manifest.json`.
+The source original stays outside the repository. The exclusion is recorded in `../manifest.json`.

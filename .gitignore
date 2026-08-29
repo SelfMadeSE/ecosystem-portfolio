@@ -4,3 +4,22 @@ node_modules
 *.tsbuildinfo
 .DS_Store
 .env*
+artifacts/
+src/app/portfolio-v2 2.css
+
+# Local evidence review and alternate media cuts; not part of the public release.
+docs/oilfield-engineering-evidence.md
+docs/portfolio-evidence-audit.md
+public/media/field/video/chapter-*.mp4
+public/media/field/video/field-pov-scrub.mp4
+public/media/portrait/rylee-halftone.svg
+public/media/provenance/scene-media-staging.json
+public/media/rome/generated/
+public/media/scenes/
+public/media/spline/
+public/media/travel/germany-plate-01.jpg
+scripts/focused-browser-proof.mjs
+scripts/mobile-nav-check.mjs
+scripts/prepare_scene_media.py
+scripts/visual-acceptance.mjs
+scripts/work-scenes-check.mjs

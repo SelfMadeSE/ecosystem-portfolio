@@ -1,0 +1,25 @@
+.git
+node_modules
+.next
+.vercel
+.env*
+*.tsbuildinfo
+.DS_Store
+
+# Local review, documentation, and verification tooling are not runtime assets.
+artifacts
+docs
+scripts
+src/app/portfolio-v2 2.css
+
+# Provenance-only, rejected, reserved, or clearance-pending media.
+public/media/portrait
+public/media/rome
+public/media/travel
+public/media/scenes
+
+# Local alternate video cuts that are not referenced by the active application.
+public/media/field/video/chapter-*.mp4
+public/media/field/video/meta-field-pov-1045-1130-autoplay.mp4
+public/media/field/video/meta-field-pov-1045-1130-desktop-audio.mp4
+public/media/field/video/meta-field-pov-1045-1130-mobile.mp4
